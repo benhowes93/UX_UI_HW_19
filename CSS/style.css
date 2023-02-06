@@ -1,0 +1,266 @@
+
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    min-height:100%;
+    position: relative;
+
+}
+
+.menu{
+    /* display: inline-block; --> */
+    vertical-align: top;
+    float: right;
+    height: 100%;
+}
+
+.inline-block .logo{
+float: left;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline-block;
+}
+.logo img{
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+nav{
+    width: 73%;
+    padding: 1%;
+}
+
+.navigation{
+    padding-bottom: 25px;
+    height: 75px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+    width: 50%;
+    margin-left: auto;
+    font-size: xx-large;
+    ;
+}
+li{
+    font-size: 15px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 45px;
+    color: white
+}
+
+.heroImg{
+   /* padding: 500px;*/
+    display: flex;
+    justify-content: center;
+    padding-bottom: 250px;
+    padding-top: 150px;
+}
+.content{
+   /* width: 500px;
+    margin: 0 auto;*/
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+   display: flex;
+   justify-content: right;
+   position: fixed;
+   bottom:0;
+   width:100%;
+   height: 75px; 
+   background: black
+}
+
+
+.foot{
+    display: inline-block;
+    vertical-align: top;      
+    position: absolute;
+    border: 1px;
+    padding-bottom: 65px;
+}
+
+
+.flexContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    padding-bottom: 500px;
+}
+.flexItem{
+    width: 33%;
+    justify-content: center;
+}
+
+.flexItem img{
+    border: #373738;
+}
+.img{
+    float: right;
+    width: 279.5px;
+    height: 372.5px;
+}
+.description{
+    float: left;
+    width: 50%;
+    margin: 20px;
+    font-size: 18px;
+    
+}
+#selfie{
+    width: 100%;
+    height: auto;
+}
+#aboutMe{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.myWork{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.workGrid{
+    margin-right: 40px;
+    padding: 10px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /*grid-template-rows: 1fr 3fr;*/
+    grid-template-areas: "travelLogo travelContent" 
+    "thinkLogo thinkContent";
+}
+.travelLogo{
+    grid-area: travelLogo;
+    display: flex;
+    justify-content: center;
+}
+
+.travelLogo img{
+    height: 236px;
+    width: 260px
+    /*height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;*/
+}
+
+
+.thinkLogo{
+    grid-area: thinkLogo;
+    display: flex;
+    justify-content: center;
+}
+
+.thinkLogo img{
+    height: 236px;
+    width: 260px;
+    /*height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;*/
+}
+
+.travelContent{
+    grid-area: travelContent;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    
+}
+.thinkContent{
+    display: flex;
+    flex-direction: column;
+    grid-area: thinkContent;
+    object-fit: cover;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+p{
+    font-size: 18px;
+    padding: 10px;
+}
+h4{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 12px;
+    padding-top: 1px;
+}
+.resume{
+    font-size: 25px;
+}
+
+.splash{
+    padding-top: 150px;
+
+}
+
+.footer-logo{
+    float: left;
+}
+/*.splash{
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: .5}
+    100% {opacity: 1;}
+}*/
+
+
+    
+
+
+
+@media only screen and (max-width: 700px){
+.flexContainer{
+    flex-direction: column;}
+.flexItem{
+    width: 100%;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "travelLogo"
+    "travelContent"
+    "thinkLogo"
+    "thinkContent";
+}
+.travelLogo{
+    width: 100%;
+}
+.travelContent{
+    width: 100%;
+}
+.thinkLogo{
+    width: 100%;
+}
+.thinkContent{
+    width: 100%;
+}
+}
